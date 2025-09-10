@@ -27,8 +27,8 @@ def longestOnes(nums, k):
 
         while zeros > k: # This is a while lop inside the for loop that is checking to see if zeros is greater than k value that is given in the function.\
                 if nums[left] == 0: #if the nums left pointer is equal to zero than we subtract zeros with a 1.
-                zeros -= 1
-            left += 1 # We continue to mvoe the left pointer.
+                    zeros -= 1
+                left += 1 # We continue to mvoe the left pointer.
 
 
         max_len = max(max_len, right - left + 1) # We then calculate the max_len of the consecutive 1's via figuring out the index of the max_len.
